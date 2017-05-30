@@ -1,0 +1,12 @@
+environments:
+- name: dev
+- name: production
+service:
+  name: mu-test
+  port: 80
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: raedwa01/mu-test
